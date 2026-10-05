@@ -1,0 +1,53 @@
+/* Container do carrossel */
+.elementor-image-carousel-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  contain: content;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Wrapper dos slides */
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+/* Slides individuais */
+.swiper-slide {
+  margin-right: 12px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Imagens dos slides */
+.swiper-slide img {
+  border-radius: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito hover nas imagens */
+.swiper-slide:hover img {
+  transform: scale(1.05);
+}
+
+/* Otimizações de performance */
+.elementor-image-carousel {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}

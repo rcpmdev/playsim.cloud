@@ -1,0 +1,14 @@
+.parcelado,
+.parcelado2 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.parcelado {
+    color: #fff;
+}
+
+.parcelado2 {
+    color: #000; 
+}
